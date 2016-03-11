@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Conditional Logic in JavaScript</title>
+    <script type="text/javascript">
+        var someValue = 24;
+        var otherValue = 23;
+        
+        // using if and else if statements
+        if(someValue > 30) {
+            alert("first case");
+        } else if( someValue < 30) {
+            alert("second case");
+        } else if(someValue === 24) {
+            alert("third case");
+        } else {
+            alert("fourth case");
+        }
+        
+        
+        // the && is the logical AND.  Both conditions must be true for alert to fire
+        if(someValue > 20 && otherValue > 20) {
+            alert("fifth case");
+        }
+        
+        
+        // the || is the logical OR.  Either one or both can be true and the alert will fire
+        if(someValue === 24 || otherValue === 24) {
+            alert("sixth case");
+        }
+        
+        
+        // The ternery operator, also known as the conditional operator
+        // If someValue is equal to 24 (true), myResult is assigned "equal"
+        // otherwise, it is false and myResult is assiged "not equal"
+        var myResult = "";
+        myResult = (someValue === 24) ? "equal" : "not equal";
+        
+        // switch staements
+        var userName = "Rimmer";
+        switch (userName)
+        {
+            case "Lister":
+            document.write("Care for a good curry?");
+            break;
+            
+            case "Rimmer":
+            document.Write("Welcome back, smeg head");
+            break;
+            
+            default:
+            document.write("Are you an emohawk");
+            break;
+        }
+        
+        
+    </script>
+    </head>
+    <body>
+    <h1>Conditional Logic in JavaScript</h1>
+    </body>
+</html>
