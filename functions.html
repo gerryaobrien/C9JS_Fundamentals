@@ -3,10 +3,82 @@
     <head>
     <title>JavaScript Functions</title>
     <script type="text/javascript">
-    
+        /*
+        // a simple function that takes no arguments
+        function myNewFunction() {
+            alert("Howdy!");
+        }
+        
+        myNewFunction();
+        */
+        
+        /*
+        // a function that accepts one argument and uses
+        // it in the alert dialog
+        function myNewFunction(myValue){
+            alert("Howdy, " + myValue);
+        }
+        
+        myNewFunction("pardner");
+        */
+        
+        
+        /*
+        // function add() that takes two arguments and adds them
+        // outputting them in an alert
+        function add(firstNumber, secondNumber) {
+            return firstNumber + secondNumber;
+        }
+        
+        var myResult = add(1, 2);
+        alert(myResult);
+        */
+        
+        
+        /*
+        // an add function that will accept an array of arguments
+        // adds them all in a for loop, then uses an alert to display them
+        // this is possible because functions in JavaScript have a built in
+        // arguments collection for arguments that are passed in to the function
+        function add() {
+            var tempValue = 0;
+            for(i = 0; i < arguments.length; i++) {
+                tempValue += arguments[i];
+            }
+            return tempValue;
+        }
+        
+        var myValue = add(1,2,3,4,5);
+        alert(myValue);
+        */
+        
+        /*
+        // create a function and assign it to a variable, known as a function literal
+        // the variable is now known as a function object
+        // you can pass this function literal into other functions
+        // as an argument
+        var addMe = function() {
+            return arguments[0] + arguments[1];
+        }
+        
+        var myNewValue = addMe(1,2);
+        alert(myNewValue);
+        */
+        
+        
+        // this is an anonymous function
+        // because it has no name assigned and is not
+        // assigned to a variable
+        alert((function() {
+            return arguments[0] + arguments[1];
+        }) (1,3));
+        
+        
+        
     </script>
     </head>
     <body>
     <h1>JavaScript Functions</h1>
+    <!--<input type="submit" value="Click Me" onclick="myNewFunction()">-->
     </body>
 </html>
